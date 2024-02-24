@@ -34,6 +34,12 @@ section:nth-child(even) {
     margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 640px) {
+    .profile {
+        flex-direction: column;
+    }
+}
+
 .flex {
     display: flex;
 }
@@ -49,9 +55,20 @@ section:nth-child(even) {
     padding: 1rem;
 }
 
+@media screen and (max-width: 640px) {
+    .picture {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .picture {
+        width: 14rem;
+        height: 14rem;
+    }
+}
+
 .picture {
-    width: 14rem;
-    height: 14rem;
     object-fit: cover;
     vertical-align: middle;
     border-radius: 1rem;
